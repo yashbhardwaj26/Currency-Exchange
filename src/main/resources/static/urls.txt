@@ -1,0 +1,1 @@
+currency exchange url - http://localhost:8080/currencyexhange/from/USD/to/INR
