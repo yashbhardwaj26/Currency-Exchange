@@ -8,6 +8,7 @@ public class CurrencyExchange {
 	private String from;
 	private String to;
 	private BigDecimal conversionMultiple;
+	private String environment;
 	public Long getId() {
 		return id;
 	}
@@ -43,6 +44,13 @@ public class CurrencyExchange {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	public String getEnvironment() {
+		return environment;
+	}
+	public void setEnvironment(String environment) {
+		this.environment = environment;
+	}
+	
 	
 	
 
