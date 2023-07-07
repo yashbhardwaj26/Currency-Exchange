@@ -2,10 +2,17 @@ package com.CurrencyExchange;
 
 import java.math.BigDecimal;
 
-public class CurrencyExchange {
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
+public class CurrencyExchange {
+	@Id
 	private Long id;
+	@Column(name="Currency_from")
 	private String from;
+	@Column(name="Currency_to")
 	private String to;
 	private BigDecimal conversionMultiple;
 	private String environment;
