@@ -19,7 +19,7 @@ public class CurrencyExchangeController {
 	@Autowired
 	private CurrencyExchangeRepository repo;
 	
-	@GetMapping("/currencyexhange/from/{from}/to/{to}")
+	@GetMapping("/currency-exchange/from/{from}/to/{to}")
 	public CurrencyExchange getCurrencyExchangeValue(@PathVariable String from, @PathVariable String to) {
 		
 		String port = environment.getProperty("local.server.port");
